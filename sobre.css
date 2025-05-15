@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a1a1a;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: solid 2px #ffffff10;
+    user-select: none;
+    padding: 20px 0px;
+}
+
+header img {
+    width: 200px;
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+header nav a {
+    color: #ffffff80;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+header nav .a-active {
+    color: #004aad;
+}
+
+
+header nav a:hover {
+    color: #004aad;
+    transition: all 1000ms;
+}
+
+header .discord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #004aad;
+    padding: 10px 20px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+header .discord:hover {
+    background-color: #003477;
+    transition: all 1s;
+
+}
+
+header .discord i {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+header .discord a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 100px;
+
+}
+
+.infos h1 {
+    color: white;
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+
+}
+
+section span {
+    color: #004aad;
+    padding: 5px 10px 0px 0px;
+
+    border-radius: 10px;
+}
+
+.infos p {
+    width: 40%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #ffffff80;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.infos .btn-sections {
+    display: flex;
+
+    gap: 10px;
+}
+
+.infos button {
+    border: solid 2px #004aad;
+    background: #004aad20;
+
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 500;
+
+    color: white;
+}
+
+.infos .conferir-projetos:hover {
+    background: #003477;
+    background: linear-gradient(90deg, #003477, #00347799);
+    transition: all 500ms;
+
+}
+
+.infos .sobre-mim {
+    background: #004aad;
+}
+
+
+.infos .sobre-mim:hover {
+    border: solid 2px #004094;
+    background: #003477;
+    transition: all 500ms;
+}
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+    height: 100px;
+    border-top: solid 2px #ffffff10;
+    padding: 50px 0px;
+}
+
+footer img {
+    width: 20%;
+    height: auto;
+}
+
+.nav-footer {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    color: #ffffff;
+    font-size: 20px;
+
+}
+
+.nav-footer i {
+    cursor: pointer;
+    background-color: #004aad;
+    border-radius: 100px;
+    color: white;
+    padding: 10px;
+}
+
+.nav-footer i:hover {
+    background-color: #003477;
+    transition: all 300ms;
+}
+
+footer .footer-esquerda {
+    user-select: none;
+}
+
+footer .footer-esquerda h1 {
+    color: #ffffff80;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+footer .footer-esquerda span {
+    color: #004aad;
+}
+
+@media screen and (max-width: 1020px) {
+    header nav {
+        display: none;
+    }
+
+    .infos h1 {
+        font-size: 25px;
+        width: 100%;
+
+    }
+
+    .infos p {
+        font-size: 10px;
+        width: 100%;
+
+    }
+
+    .btn-sections{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .btn-sections .conferir-projetos {
+        position: relative;
+        bottom: 20px;
+    }
+}
